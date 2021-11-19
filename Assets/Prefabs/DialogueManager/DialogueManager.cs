@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     public Text conversationText;
     public Canvas dialogCanvas;
 
+    public Animator animator;
+
     
     private void Awake()
     {
@@ -33,7 +35,8 @@ public class DialogueManager : MonoBehaviour
     {
         _currentDialogue = dialogue;
         Debug.Log("Set canvas active");
-        dialogCanvas.gameObject.SetActive(true);
+        //dialogCanvas.gameObject.SetActive(true);
+        animator.SetBool("IsOpen", true);
         Debug.Log($"Starting conversation with {dialogue.name}");
         conversationTitle.text = dialogue.name;
         sentences = new Queue<string>(dialogue.sentences);
@@ -60,7 +63,8 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Ende der Konversation");
         conversationTitle.text = "";
         conversationText.text = "";
-        dialogCanvas.gameObject.SetActive(false);
+        //dialogCanvas.gameObject.SetActive(false);
+        animator.SetBool("IsOpen", false);
         _currentDialogue.AfterDialogFinishedEvent?.Invoke();
         
     }

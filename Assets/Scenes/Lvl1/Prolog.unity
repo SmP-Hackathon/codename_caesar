@@ -308,8 +308,8 @@ MonoBehaviour:
     - 'I  want to call some object''s some function which can be assigned in inspector
       in my C# script.
 
-      It''s perfect if I can assign object and function
-      just like Button UI''s OnClick stuff.'
+      It''s perfect if I can assign object and function just
+      like Button UI''s OnClick stuff.'
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -399,6 +399,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 654552815837369219, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 654552815837369219, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c9e49cce92cfd9e469a51dc05f4a618d, type: 3}
     - target: {fileID: 5750554386339984108, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
       propertyPath: m_Pivot.x
       value: 0
