@@ -17,15 +17,15 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void onBtnStart() {
-        //SceneManager.LoadScene
+    public void onBtnStartClick() {
+        SceneManager.LoadScene("Scenes/LevelSelection");
     }
 
-    public void onBtnSettings() {
+    public void onBtnSettingsClick() {
 
     }
     
-    public void onBtnQuit() {
+    public void onBtnQuitClick() {
         Application.Quit();
     }
 }
