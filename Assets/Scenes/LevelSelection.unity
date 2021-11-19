@@ -279,6 +279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863647346}
     m_Modifications:
+    - target: {fileID: 7393755836972545092, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
+      propertyPath: levelName
+      value: Scenes/Lvl3/Prolog
+      objectReference: {fileID: 0}
     - target: {fileID: 8980972513897438158, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
       propertyPath: m_Text
       value: Level 3
@@ -564,6 +568,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863647346}
     m_Modifications:
+    - target: {fileID: 7393755836972545092, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
+      propertyPath: levelName
+      value: Scenes/Lvl2/Prolog
+      objectReference: {fileID: 0}
     - target: {fileID: 8980972513897438158, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
       propertyPath: m_Text
       value: Level 2
@@ -776,6 +784,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863647346}
     m_Modifications:
+    - target: {fileID: 7393755836972545092, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
+      propertyPath: levelName
+      value: Scenes/Lvl1/Prolog
+      objectReference: {fileID: 0}
     - target: {fileID: 8980972515510360354, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
       propertyPath: m_Name
       value: ' BtnLevel 1'
