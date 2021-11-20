@@ -1,28 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
+using TMPro;
 
-public class TextEncryptor : MonoBehaviour
+public class Teil2Encryptor : MonoBehaviour
 {
+    public TMP_InputField inputField;
+    public UnityEvent encryptedCorrectly;
+    public string clearMessage;
+    public int key;
 
-    [TextArea(2,4)]
-    public string[] messages;
+    private string inputText;
+    private string encryptedMessage;
 
-    public Text encryptedTextBox;
-
-    public string ClearMessage {get; private set;}
-
-    public void EncryptString()
+    public void checkEncryptedMessage()
     {
-        ClearMessage = messages[(int)(Random.Range(0f, (float)messages.Length))];
-        encryptedTextBox.text = CaesarCipher(ClearMessage, (int)Random.Range(1f, 25f));
+        inputText = inputField.text.ToLower();
+
+        // compute encrypted text from clearMessage
+        encryptedMessage = CaesarCipher(clearMessage, key).ToLower();
+        
+        if (inputText.ToLower() == encryptedMessage)
+        {
+            Debug.Log("Richtig");
+            encryptedCorrectly?.Invoke();
+        }
     }
 
     private string CaesarCipher(string clearMessage, int key)
     {
-        char[] alphabetLower = new char[26] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-        char[] alphabetUpper = new char[26] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        char[] alphabetLower = new char[26] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+        char[] alphabetUpper = new char[26] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 
         string encryptedMessage = "";
         foreach (var currentLetter in clearMessage)
@@ -50,11 +59,12 @@ public class TextEncryptor : MonoBehaviour
                 if (isUpper)
                 {
                     encryptedMessage += alphabetUpper[(currentLetterIndex + key) % 26];
-                } else
+                }
+                else
                 {
                     encryptedMessage += alphabetLower[(currentLetterIndex + key) % 26];
                 }
-                
+
             }
         }
 
