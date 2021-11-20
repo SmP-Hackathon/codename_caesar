@@ -283,6 +283,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235703989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+  m_PrefabInstance: {fileID: 2063012569896281990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ed8c78a2433924a85ec9371fe08034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645924408
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907532195
 GameObject:
@@ -401,8 +412,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 1
+  DialogueManager: {fileID: 4524092696133583663}
   prevButton: {fileID: 32720916}
-  fireOnSceneLoad: 1
 --- !u!4 &1907532198
 Transform:
   m_ObjectHideFlags: 0
@@ -415,7 +426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914593980
 GameObject:
@@ -461,7 +472,7 @@ MonoBehaviour:
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2063012569896281991}
+        - m_Target: {fileID: 1235703989}
           m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
           m_MethodName: LoadScene
           m_Mode: 1
@@ -473,8 +484,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 1
+  DialogueManager: {fileID: 4524092696133583663}
   prevButton: {fileID: 32720916}
-  fireOnSceneLoad: 0
 --- !u!4 &1914593982
 Transform:
   m_ObjectHideFlags: 0
