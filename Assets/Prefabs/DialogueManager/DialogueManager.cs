@@ -12,8 +12,10 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager GetInstance() => _instance;
 
     private string[] sentences;
-    private int currentSentenceIndex = 0;
+    private string[] confirmatoryStatements;
+    private int _currentIndex = 0;
     private Dialogue _currentDialogue;
+    private Button _currentPrevButton;
 
     public Text conversationTitle;
     public Text conversationText;
@@ -24,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     
     private void Awake()
     {
+        Debug.Log("Awake");
          if (_instance != null && _instance != this)
         {
             Destroy(this);
@@ -32,9 +35,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, Button prevButton)
     {
         _currentDialogue = dialogue;
+        _currentPrevButton = prevButton;
+        _currentIndex = 0;
         Debug.Log("Set canvas active");
         //dialogCanvas.gameObject.SetActive(true);
         animator.SetBool("IsOpen", true);
@@ -52,26 +57,29 @@ public class DialogueManager : MonoBehaviour
         string userTitle = PlayerPrefs.GetString("userTitle", "Agentin");
         string smallUserTitle = userTitle.ToLower();
         conversationText.text = String.Format(currentSentence, userName, userTitle, smallUserTitle);
+
+        // Hide prev button on start
+        _currentPrevButton.gameObject.SetActive(index != 0);
     }
 
     public void DisplayPrevSentence() {
-        if (currentSentenceIndex == 0)
+        if (_currentIndex == 0)
         {
             return;
         }
 
-        DisplaySentence(--currentSentenceIndex);
+        DisplaySentence(--_currentIndex);
     }
 
     public void DisplayNextSentence()
     {
-        if(currentSentenceIndex == sentences.Length - 1)
+        if(_currentIndex == sentences.Length - 1)
         {
             EndDialogue();
             return;
         }
 
-        DisplaySentence(++currentSentenceIndex);
+        DisplaySentence(++_currentIndex);
     }
 
     public void EndDialogue()
@@ -82,6 +90,5 @@ public class DialogueManager : MonoBehaviour
         //dialogCanvas.gameObject.SetActive(false);
         animator.SetBool("IsOpen", false);
         _currentDialogue.AfterDialogFinishedEvent?.Invoke();
-        
     }
 }
