@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl1/NameSelection.unity
     guid: 6a787ee42a443544ca8fd737b293114a
+  - enabled: 1
+    path: Assets/Scenes/Lvl1/Lvl.unity
+    guid: eb8d581c4c526154d868268bace8cc7b
+  - enabled: 1
+    path: Assets/Scenes/Lvl1/TitleSelection.unity
+    guid: 7d0622af5723b384495a0ea31ea35f07
   m_configObjects: {}
