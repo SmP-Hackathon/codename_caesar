@@ -29,11 +29,11 @@ public class RightAnswerChecker : MonoBehaviour
     public void check()
     {
         
-        var _encryptedMessage = Regex.Replace(encryptor.EncryptedMessage.ToLower(), @"[^A-Z]+", String.Empty);
-        var _typedMessage = Regex.Replace(text2.text.ToLower(), @"[^A-Z]+", String.Empty);
+        var _encryptedMessage = Regex.Replace(encryptor.EncryptedMessage.ToLower(), @"[^a-z]+", String.Empty);
+        var _typedMessage = Regex.Replace(text2.text.ToLower(), @"[^a-z]+", String.Empty);
         
-        //Debug.Log("Correct Text:\t\t" + _encryptedMessage);
-        //Debug.Log("Input Text:\t\t" + _typedMessage);
+        Debug.Log("Correct Text:\t\t" + _encryptedMessage);
+        Debug.Log("Input Text:\t\t" + _typedMessage);
         //Debug.Log("Correct Text:\t\t" + _encryptedMessage.Length);
         //Debug.Log("Input Text:\t\t" + _typedMessage.Length);
         //Debug.Log(_encryptedMessage.Equals(_typedMessage.ToLower()));
