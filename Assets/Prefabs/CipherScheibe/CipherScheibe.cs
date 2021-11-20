@@ -8,6 +8,12 @@ public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
     public Transform Wheel; //the thing you're trying to rotate
     public Text CipherKey;
+
+    public int CurrentCipherKeyNumber {get; private set;}
+    public char CurrentCipherKeyLetter => alphabet[CurrentCipherKeyNumber];
+
+    private char[] alphabet = new char[26]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+
     Vector2 dir;
     float dist;
     float check;
@@ -51,13 +57,13 @@ public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
             Wheel.rotation = Quaternion.Euler(0,0, -angle);
             Debug.Log(Wheel.rotation.eulerAngles.ToString());
 
-            
+            CurrentCipherKeyNumber = (int)((26 - (Mathf.Round(((774.9f - Wheel.rotation.eulerAngles.z) % 360)/13.8461f) % 26)) % 26);
 
             UpdateLabel();
     }
 
     private void UpdateLabel()
     {
-        CipherKey.text = ((26 - (Mathf.Round(((774.9f - Wheel.rotation.eulerAngles.z) % 360)/13.8461f) % 26)) % 26).ToString();
+        CipherKey.text = CurrentCipherKeyNumber.ToString() + "/" + CurrentCipherKeyLetter;
     }
 }
