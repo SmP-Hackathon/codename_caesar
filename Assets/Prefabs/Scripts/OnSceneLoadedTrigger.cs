@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class OnSceneLoadedTrigger : MonoBehaviour
 {   
-    public delegate void executeWhenLoaded();
+    public UnityEvent ActionToCall;
     
     // called first
     void OnEnable()
@@ -17,6 +18,7 @@ public class OnSceneLoadedTrigger : MonoBehaviour
     // called second
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        ActionToCall?.Invoke();
         //Debug.Log("OnSceneLoaded: " + scene.name);
         //Debug.Log(mode);
         
