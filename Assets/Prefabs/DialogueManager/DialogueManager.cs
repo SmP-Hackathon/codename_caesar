@@ -11,7 +11,8 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager _instance;
     public static DialogueManager GetInstance() => _instance;
 
-    private Queue<string> sentences;
+    private string[] sentences;
+    private int currentSentenceIndex = 0;
     private Dialogue _currentDialogue;
 
     public Text conversationTitle;
@@ -39,23 +40,35 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", true);
         Debug.Log($"Starting conversation with {dialogue.name}");
         conversationTitle.text = dialogue.name;
-        sentences = new Queue<string>(dialogue.sentences);
+        sentences = dialogue.sentences;
 
-        DisplayNextSentence();
+        DisplaySentence(0);
+    }
+
+    public void DisplaySentence(int index) {
+        string currentSentence = sentences[index];
+        Debug.Log(index);
+        conversationText.text = String.Format(currentSentence, PlayerPrefs.GetString("userName", "007"));
+    }
+
+    public void DisplayPrevSentence() {
+        if (currentSentenceIndex == 0)
+        {
+            return;
+        }
+
+        DisplaySentence(--currentSentenceIndex);
     }
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if(currentSentenceIndex == sentences.Length - 1)
         {
             EndDialogue();
             return;
         }
 
-        string currentSentence = sentences.Dequeue();
-
-        Debug.Log(currentSentence);
-        conversationText.text = currentSentence;
+        DisplaySentence(++currentSentenceIndex);
     }
 
     public void EndDialogue()

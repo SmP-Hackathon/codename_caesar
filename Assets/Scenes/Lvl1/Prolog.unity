@@ -358,10 +358,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: StartDialog
+    name: Prolog
     sentences:
-    - Erster Satz
-    - Zweiter Satz
+    - Herzlich Willkommen im Dienst, Agent {0}! Dein erster Tag beim Geheimdienst
+      gegen ungeheuerliche Taten, kurz GUT, bricht an.
+    - "Wie, du dachtest, du ziehst erstmal deinen schwarzen Anzug an und st\xFCrzt
+      dich in Verfolgungsjagden mit Schwerverbrechern?"
+    - "Geheimagent sein bedeutet vor allem eines: jede Menge Schreibtischarbeit!
+      Aber du wirst sehen, nur so landen die \xDCbelt\xE4ter am Ende da, wo sie hingeh\xF6ren."
+    - "Hm, f\xFCr den Anfang solltest du dich um ein kleineres Kaliber k\xFCmmern.
+      Die B\xF6se Organisation k\xF6nnte gut passen! Nicht allzu helle, aber machen
+      ordentlich Rabatz. "
+    - "Seit einiger Zeit greifen sie alles M\xF6gliche an, was irgendwie mit Freizeit
+      oder Kultur zu tun hat. Dass die Leute Spa\xDF und Unterhaltung wollen, ist
+      ihnen ein Dorn im Auge. "
+    - Hilf uns im Team, diese Gruppierung zu zerschlagen!
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls:
