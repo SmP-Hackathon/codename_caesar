@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: sceneName
-      value: Scenes/Lvl1/Prolog_Intro
+      value: Scenes/Lvl1/Prolog
       objectReference: {fileID: 0}
     - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: m_RootOrder
