@@ -9,9 +9,11 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager DialogueManager;
 
+    public Button prevButton;
+
     public void TriggerDialogue()
     {
-        DialogueManager.StartDialogue(dialogue);
+        DialogueManager.StartDialogue(dialogue, prevButton);
     }
     
 }

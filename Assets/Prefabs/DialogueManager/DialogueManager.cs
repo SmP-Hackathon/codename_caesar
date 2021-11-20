@@ -19,10 +19,10 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, Button prevButton)
     {
         _currentDialogue = dialogue;
-        //_currentPrevButton = prevButton;
+        _currentPrevButton = prevButton;
         _currentIndex = 0;
         Debug.Log("Set canvas active");
         //dialogCanvas.gameObject.SetActive(true);
