@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
     }
 
     public void onBtnStartClick() {
+        SceneManager.LoadScene("Scenes/Lvl1/TitleSelection");
+    }
+
+    public void onBtnLevelClick() {
         SceneManager.LoadScene("Scenes/LevelSelection");
     }
 

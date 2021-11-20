@@ -371,8 +371,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 135}
-  m_SizeDelta: {x: -664.6144, y: 66.1203}
+  m_AnchoredPosition: {x: 0, y: 70}
+  m_SizeDelta: {x: -664, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733134445
 MonoBehaviour:
@@ -418,9 +418,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 684924180}
+      - m_Target: {fileID: 684924186}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: onBtnLevelClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -609,9 +609,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 135}
-  m_SizeDelta: {x: -664.6144, y: 66.1203}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 332, y: 140}
+  m_SizeDelta: {x: -664, y: 70}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1200686552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,8 +742,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -54}
-  m_SizeDelta: {x: -664.6144, y: 66.1203}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: -664, y: 66.1203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1535552554
 MonoBehaviour:
@@ -1112,9 +1112,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 39}
-  m_SizeDelta: {x: -664.6144, y: 66.1203}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 332, y: -70}
+  m_SizeDelta: {x: -664, y: 70}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1714956850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1279,7 +1279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Levelauswahl
 --- !u!222 &1763156659
 CanvasRenderer:
   m_ObjectHideFlags: 0
