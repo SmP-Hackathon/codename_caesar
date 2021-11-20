@@ -155,15 +155,11 @@ MonoBehaviour:
   dialogue:
     name: Fall 1
     sentences:
-    - "{1} {0}, dein erster Fall ist im Anflug! Am Wochenende soll in Dublin die
-      Premiergala zur letzte Folge von \u201EGame of Tones\u201C stattfinden."
-    - "Wie, du kennst die Serie nicht? Ich habe schon alle Folgen f\xFCnf Mal durchgeschaut."
-    - Auf jeden Fall haben unsere Informanten herausgefunden, dass die BO den Hauptdarsteller
-      und Stargast Dietmar Bohler einkassieren wollen! Ohne ihn wird die Premierengala
-      ins Wasser fallen.
-    - "Unsere IT-Leute konnten sich aber in den privaten Chat der BO einklinken.
-      Da m\xFCssen Hinweise dazu drinstecken, wie sie Dietmar Bohler entf\xFChren
-      wollen!"
+    - Festnehmen!
+    - "Nein! Wir sind die Guten und ihr seid die B\xF6sen! Das werdet ihr noch bereuen!"
+    voices:
+    - {fileID: 8300000, guid: ba23dbc09c3dd1440917e9b590cd6fc7, type: 3}
+    - {fileID: 8300000, guid: 562a818a26ef3d548a84dc6412878786, type: 3}
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls:
@@ -224,7 +220,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: da38952b7d64b6c4d86f517975f8e774, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -782,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: sceneName
-      value: Scenes/LevelSelection
+      value: Scenes/Lvl2/Intro2
       objectReference: {fileID: 0}
     - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: m_RootOrder
