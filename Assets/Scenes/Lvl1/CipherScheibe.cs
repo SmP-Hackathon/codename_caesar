@@ -58,6 +58,6 @@ public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
     private void UpdateLabel()
     {
-        CipherKey.text = (Mathf.Round(((720f - Wheel.rotation.eulerAngles.z - 55.3f+111f-0.8f) % 360)/13.8461f)).ToString();
+        CipherKey.text = ((26 - (Mathf.Round(((774.9f - Wheel.rotation.eulerAngles.z) % 360)/13.8461f) % 26)) % 26).ToString();
     }
 }
