@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class VignereDecryptor : MonoBehaviour
@@ -11,6 +12,8 @@ public class VignereDecryptor : MonoBehaviour
     public CipherScheibe scheibe2;
     public CipherScheibe scheibe3;
     public VigenereEncryptor encryptor;
+    public UnityEvent OnLevelSolved;
+    public UnityEvent OnWrongEncryptionCheck;
     public string DecryptedMessage {get; private set;}
 
     public Text DecryptedTextBox;
@@ -52,6 +55,12 @@ public class VignereDecryptor : MonoBehaviour
 
         DecryptedTextBox.text = DecryptedMessage.ToUpper();
 
+    }
+
+    public void CheckIfMessageEncrypted()
+    {
+        if(encryptor.ClearMessage.ToLower() == DecryptedMessage.ToLower()) OnLevelSolved?.Invoke();
+        else OnWrongEncryptionCheck?.Invoke();
     }
 
     private int GetLetterIndexInAlphabet(char c)
