@@ -7,10 +7,6 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-
-    private static DialogueManager _instance;
-    public static DialogueManager GetInstance() => _instance;
-
     private string[] sentences;
     private int currentSentenceIndex = 0;
     private Dialogue _currentDialogue;
@@ -20,17 +16,6 @@ public class DialogueManager : MonoBehaviour
     public Canvas dialogCanvas;
 
     public Animator animator;
-
-    
-    private void Awake()
-    {
-         if (_instance != null && _instance != this)
-        {
-            Destroy(this);
-        } else {
-            _instance = this;
-        }
-    }
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -80,7 +65,9 @@ public class DialogueManager : MonoBehaviour
         conversationTitle.text = "";
         conversationText.text = "";
         //dialogCanvas.gameObject.SetActive(false);
+        Debug.Log("Set Canvas.isOpen = false");
         animator.SetBool("IsOpen", false);
+        Debug.Log("Invoking AfterDialogFinishedEvent");
         _currentDialogue.AfterDialogFinishedEvent?.Invoke();
         
     }

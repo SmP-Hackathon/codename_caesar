@@ -6,27 +6,11 @@ using UnityEngine.SceneManagement;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    public bool fireOnSceneLoad;
+    public DialogueManager DialogueManager;
 
     public void TriggerDialogue()
     {
-        DialogueManager.GetInstance().StartDialogue(dialogue);
-    }
-
-    // called first
-    void OnEnable()
-    {
-        //Debug.Log("OnEnable called");
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }    
-    
-    // called second
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        //Debug.Log("OnSceneLoaded: " + scene.name);
-        //Debug.Log(mode);
-        
-        if(fireOnSceneLoad) TriggerDialogue();
+        DialogueManager.StartDialogue(dialogue);
     }
     
 }

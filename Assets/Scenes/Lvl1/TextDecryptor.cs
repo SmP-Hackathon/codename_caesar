@@ -11,7 +11,7 @@ public class TextDecryptor : MonoBehaviour
     public TextEncryptor encryptor;
     public UnityEvent decryptedCorrectly;
 
-    public string inputText;
+    private string inputText;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +25,15 @@ public class TextDecryptor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void CheckEncryptedMessage()
+    {
         inputText = input.text;
         if (inputText.ToLower() == encryptor.ClearMessage.ToLower())
         {
+            Debug.Log("Richtig");
             decryptedCorrectly?.Invoke();
         }
     }

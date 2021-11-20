@@ -18,8 +18,9 @@ public class OnSceneLoadedTrigger : MonoBehaviour
     // called second
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log("Calling action to call");
         ActionToCall?.Invoke();
-        //Debug.Log("OnSceneLoaded: " + scene.name);
         //Debug.Log(mode);
         
     }  
