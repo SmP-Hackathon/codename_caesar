@@ -26,7 +26,7 @@ public class DialogueTrigger : MonoBehaviour
         //Debug.Log("OnSceneLoaded: " + scene.name);
         //Debug.Log(mode);
         
-        TriggerDialogue();
+        if(fireOnSceneLoad) TriggerDialogue();
     }
     
 }
