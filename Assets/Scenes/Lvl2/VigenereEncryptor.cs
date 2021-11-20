@@ -22,7 +22,7 @@ public class VigenereEncryptor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        EncryptMessage();
     }
 
     // Update is called once per frame

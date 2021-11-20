@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -128.3768, y: -102.84205}
-  m_SizeDelta: {x: 336.3438, y: 244.9361}
+  m_AnchoredPosition: {x: -107.995316, y: 4.2693787}
+  m_SizeDelta: {x: 500.8134, y: 364.7079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &74070894399784567
 CanvasRenderer:
@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -128.38, y: -68.1}
-  m_SizeDelta: {x: 65.0223, y: 63.4181}
+  m_AnchoredPosition: {x: -108, y: 56}
+  m_SizeDelta: {x: 96.8177, y: 94.4291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &74070895436388705
 CanvasRenderer:
@@ -190,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -128.38, y: -102.84}
-  m_SizeDelta: {x: 195.9245, y: 239.43}
+  m_AnchoredPosition: {x: -108, y: 4.2724304}
+  m_SizeDelta: {x: 291.7301, y: 356.5096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &74070896126459829
 CanvasRenderer:
@@ -271,6 +271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wheel: {fileID: 74070896126459833}
   CipherKey: {fileID: 74070895436388704}
+  OnCipherKeyChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &555592721762523314
 GameObject:
   m_ObjectHideFlags: 0
