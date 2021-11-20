@@ -213,6 +213,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -279,6 +280,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -348,6 +350,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 894.59247, y: 175.8327, z: -336.494}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -424,6 +427,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 437.85535, y: 266.6222, z: -334.16852}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -461,7 +465,7 @@ MonoBehaviour:
     name: Fall 1
     sentences:
     - "{1} {0}, dein erster Fall ist im Anflug! Am Wochenende soll in Dublin die
-      Premiergala zur letzte Folge von \u201EGame of Tones\u201C stattfinden."
+      Premiergala zur letzten Folge von \u201EGame of Tones\u201C stattfinden."
     - "Wie, du kennst die Serie nicht? Ich habe schon alle Folgen f\xFCnf Mal durchgeschaut."
     - Auf jeden Fall haben unsere Informanten herausgefunden, dass die BO den Hauptdarsteller
       und Stargast Dietmar Bohler einkassieren wollen! Ohne ihn wird die Premierengala
@@ -496,6 +500,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 437.85535, y: 266.6222, z: -334.16852}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
