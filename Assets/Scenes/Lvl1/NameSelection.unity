@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: sceneName
-      value: Scenes/Lvl1/Prolog_Intro
+      value: Scenes/Lvl1/Prolog
       objectReference: {fileID: 0}
     - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
       propertyPath: m_RootOrder
@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 654552815837369219, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c9e49cce92cfd9e469a51dc05f4a618d, type: 3}
+      objectReference: {fileID: 21300000, guid: b9c2e802e71833b4a9bb64cfca5cc767, type: 3}
     - target: {fileID: 5750554386339984108, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
       propertyPath: m_Pivot.x
       value: 0
