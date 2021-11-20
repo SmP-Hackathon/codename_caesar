@@ -838,7 +838,8 @@ MonoBehaviour:
   dialogue:
     name: Richtig
     sentences:
-    - "Herzlichen Gl\xFCckwunsch"
+    - "Perfekt, {1} {0}! So kriegen wir sie dran. Du hast deinen ersten Fall erfolgreich
+      gel\xF6st."
     voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:

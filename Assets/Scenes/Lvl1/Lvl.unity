@@ -1488,7 +1488,13 @@ MonoBehaviour:
   dialogue:
     name: Richtig
     sentences:
-    - "Herzlichen Gl\xFCckwunsch"
+    - Na klar, das ist es! Dietmar hat vor der Gala noch einen Auftritt in London
+      und seine Unterkunft ist direkt neben dem Hyde Park. Wenn wir den Agenten der
+      BO dort abfangen, haben sie schon ein Mitglied weniger!
+    - "Wenn wir ihnen eine verschl\xFCsselte Nachricht zur\xFCckschicken, tappen
+      sie in unsere Falle. Aber du musst den Schl\xFCssel benutzen, der in der Nachricht
+      eben verlangt war, sonst kommen sie uns auf die Schliche!"
+    voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls: []
