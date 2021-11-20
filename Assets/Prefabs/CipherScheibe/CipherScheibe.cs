@@ -2,12 +2,15 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
  {
 
     public Transform Wheel; //the thing you're trying to rotate
     public Text CipherKey;
+
+    public UnityEvent OnCipherKeyChanged;
 
     public int CurrentCipherKeyNumber {get; private set;}
     public char CurrentCipherKeyLetter => alphabet[CurrentCipherKeyNumber];
@@ -24,6 +27,7 @@ public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     public void Start()
     {
         UpdateLabel();
+        OnCipherKeyChanged?.Invoke();
     }
 
      void Update(){
@@ -60,6 +64,7 @@ public class CipherScheibe : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
             CurrentCipherKeyNumber = (int)((26 - (Mathf.Round(((774.9f - Wheel.rotation.eulerAngles.z) % 360)/13.8461f) % 26)) % 26);
 
             UpdateLabel();
+            OnCipherKeyChanged?.Invoke();
     }
 
     private void UpdateLabel()
