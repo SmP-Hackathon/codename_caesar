@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using TMPro;
 
 public class Teil2Encryptor : MonoBehaviour
 {
     public TMP_InputField inputField;
     public UnityEvent encryptedCorrectly;
-    public string clearMessage;
+    public Text clearMessageBox;
     public int key;
 
     private string inputText;
+    private string clearMessage;
     private string encryptedMessage;
 
     public void checkEncryptedMessage()
@@ -19,7 +21,10 @@ public class Teil2Encryptor : MonoBehaviour
         inputText = inputField.text.ToLower();
 
         // compute encrypted text from clearMessage
+        clearMessage = clearMessageBox.text;
         encryptedMessage = CaesarCipher(clearMessage, key).ToLower();
+        Debug.Log(encryptedCorrectly);
+        Debug.Log(inputText);
         
         if (inputText.ToLower() == encryptedMessage)
         {
