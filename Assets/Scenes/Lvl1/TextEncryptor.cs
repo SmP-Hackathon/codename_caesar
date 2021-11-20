@@ -11,12 +11,12 @@ public class TextEncryptor : MonoBehaviour
 
     public Text encryptedTextBox;
 
-    public string clearMessage;
+    public string ClearMessage {get; private set;}
 
     public void EncryptString()
     {
-        clearMessage = messages[(int)(Random.Range(0f, (float)messages.Length))].ToLower();
-        encryptedTextBox.text = CaesarCipher(clearMessage, (int)Random.Range(1f, 25f));
+        ClearMessage = messages[(int)(Random.Range(0f, (float)messages.Length))].ToLower();
+        encryptedTextBox.text = CaesarCipher(ClearMessage, (int)Random.Range(1f, 25f));
 
     }
 
