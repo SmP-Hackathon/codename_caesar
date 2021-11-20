@@ -469,6 +469,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 646.44904, y: 287.48303, z: -240.32999}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -722,11 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - Dietmar rennt dem Geld hinterher wie kein anderer wir locken ihn mit einer Spur
-    aus Muenzen in den Park und schon ist er verschwunden naechster Schluessel beginnt
-    mit drei
-  - wir legen einen Koeder aus Muenzen im Park denn Dietmar ist der geizigste Typ
-    auf Erden drei ist der Anfang des naechsten Schluessels
+  - Im Park. Naechster Schluessel drei.
   encryptedTextBox: {fileID: 2098510323}
 --- !u!4 &908480196
 Transform:
