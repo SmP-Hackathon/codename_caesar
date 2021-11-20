@@ -48,7 +48,10 @@ public class DialogueManager : MonoBehaviour
     public void DisplaySentence(int index) {
         string currentSentence = sentences[index];
         Debug.Log(index);
-        conversationText.text = String.Format(currentSentence, PlayerPrefs.GetString("userName", "007"));
+        string userName = PlayerPrefs.GetString("userName", "007");
+        string userTitle = PlayerPrefs.GetString("userTitle", "Agentin");
+        string smallUserTitle = userTitle.ToLower();
+        conversationText.text = String.Format(currentSentence, userName, userTitle, smallUserTitle);
     }
 
     public void DisplayPrevSentence() {

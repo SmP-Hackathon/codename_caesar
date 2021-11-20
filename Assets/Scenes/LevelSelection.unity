@@ -876,7 +876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4393344359708444014, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
       propertyPath: levelName
-      value: Scenes/Lvl1/NameSelection
+      value: Scenes/Lvl1/TitleSelection
       objectReference: {fileID: 0}
     - target: {fileID: 8980972513897438158, guid: 8699cc68859b57f439a97a492a1fe9c6, type: 3}
       propertyPath: m_Text
