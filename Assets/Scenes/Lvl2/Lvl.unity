@@ -1961,7 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: "Vigin\xE8re-Verschl\xFCssellung"
+    name: "Vigen\xE8re-Verschl\xFCssellung"
     sentences:
     - "Das sieht weniger einheitlich aus als beim letzten Mal, wahrscheinlich eine
       Vigen\xE8re-Chiffre. Jeder Buchstabe wurde wieder durch einen anderen aus einem

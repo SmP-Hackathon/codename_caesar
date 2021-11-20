@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fall 1
+    name: "Dein n\xE4chster Fall"
     sentences:
     - "{1} {0}, bist du bereit f\xFCr deinen zweiten Fall? Nach deinem ersten Erfolg
       kann es nur gut weitergehen!"
