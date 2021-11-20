@@ -1880,6 +1880,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1944306875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944306877}
+  - component: {fileID: 1944306876}
+  m_Layer: 0
+  m_Name: SceneLoadDialogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1944306876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944306875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25afe9970f9e82439e5a4606cd42b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: "Vigin\xE8re-Verschl\xFCssellung"
+    sentences:
+    - "Das sieht weniger einheitlich aus als beim letzten Mal, wahrscheinlich eine
+      Vigen\xE8re-Chiffre. Jeder Buchstabe wurde wieder durch einen anderen aus einem
+      verschobenen Alphabet ersetzt, ..."
+    - "... jedoch \xE4ndert sich dieses Alphabet bei jedem Buchstaben. Wie sich das
+      Alphabet ver\xE4ndert, das legt ein Schl\xFCsselwort fest."
+    - "Beim Schl\xFCssel PC beispielsweise beginnt das verschobene Alphabet f\xFCr
+      den ersten Buchstaben mit \u2018P\u2019, f\xFCr den zweiten Buchstaben mit
+      \u2018C\u2019, f\xFCr den dritten wieder mit \u2018P\u2018 und so weiter."
+    - "Wir haben herausgefunden, dass das Schl\xFCsselwort dieser Nachricht drei
+      Buchstaben hat. Du musst nur noch herausfinden, welche."
+    - "Mit den Scheiben kannst du das Schl\xFCsselwort zum Entschl\xFCsseln einstellen.
+      Der entschl\xFCsselte Text wird unten angezeigt. Viel Erfolg!"
+    AfterDialogFinishedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  fireOnSceneLoad: 1
+--- !u!4 &1944306877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944306875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 549.8941, y: 256.27356, z: -4078.0764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2013825305 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 74070896126459830, guid: cc8a0923cb3892145ae0959dbddbadce, type: 3}
