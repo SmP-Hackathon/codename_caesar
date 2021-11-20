@@ -8,6 +8,8 @@ public class DialogueManager : MonoBehaviour
 {
 
     private string[] sentences;
+
+    private UnityEngine.AudioClip[] voices;
     private string[] confirmatoryStatements;
     private int _currentIndex = 0;
     private Dialogue _currentDialogue;
@@ -18,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     public Canvas dialogCanvas;
 
     public Animator animator;
+
+    public AudioSource audioSource;
 
     public void StartDialogue(Dialogue dialogue, Button prevButton)
     {
@@ -30,20 +34,29 @@ public class DialogueManager : MonoBehaviour
         Debug.Log($"Starting conversation with {dialogue.name}");
         conversationTitle.text = dialogue.name;
         sentences = dialogue.sentences;
+        voices = dialogue.voices;
 
-        DisplaySentence(0);
+        DisplaySentence();
+        PlayAudio();
     }
 
-    public void DisplaySentence(int index) {
-        string currentSentence = sentences[index];
-        Debug.Log(index);
+    public void PlayAudio() {
+        AudioClip currentAudio = voices[_currentIndex];
+        audioSource.clip = currentAudio;
+        audioSource.loop = false;
+        audioSource.Play();
+    }
+
+    public void DisplaySentence() {
+        string currentSentence = sentences[_currentIndex];
+        Debug.Log(_currentIndex);
         string userName = PlayerPrefs.GetString("userName", "007");
         string userTitle = PlayerPrefs.GetString("userTitle", "Agentin");
         string smallUserTitle = userTitle.ToLower();
         conversationText.text = String.Format(currentSentence, userName, userTitle, smallUserTitle);
 
         // Hide prev button on start
-        _currentPrevButton?.gameObject.SetActive(index != 0);
+        _currentPrevButton?.gameObject.SetActive(_currentIndex != 0);
     }
 
     public void DisplayPrevSentence() {
@@ -52,7 +65,9 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        DisplaySentence(--_currentIndex);
+        _currentIndex--;
+        DisplaySentence();
+        PlayAudio();
     }
 
     public void DisplayNextSentence()
@@ -63,7 +78,9 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        DisplaySentence(++_currentIndex);
+        _currentIndex++;
+        DisplaySentence();
+        PlayAudio();
     }
 
     public void EndDialogue()

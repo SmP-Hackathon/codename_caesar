@@ -12,6 +12,8 @@ public class Dialogue
     [TextArea()]
     public string[] sentences;
 
+    public AudioClip[] voices;
+
     public UnityEvent AfterDialogFinishedEvent;
 
 }
