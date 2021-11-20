@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5742451722263686002}
         m_TargetAssemblyTypeName: BtnMainMenu, Assembly-CSharp
-        m_MethodName: onBtnMainMenu
+        m_MethodName: onBtnMainMenuClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
