@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: 9a0e83f963e2add47be77727a39cfb72
   - enabled: 1
-    path: Assets/Scenes/Lvl1/Prolog.unity
+    path: Assets/Scenes/Lvl1/Prolog_Intro.unity
     guid: 36be34325f0ff0244b18520b63fe72ea
   - enabled: 1
     path: Assets/Scenes/Lvl1/NameSelection.unity

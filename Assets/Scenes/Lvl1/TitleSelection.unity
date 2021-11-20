@@ -467,6 +467,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 296326591668060278, guid: 0561908e74e889d4e81ea17deb682257, type: 3}
+      propertyPath: m_Text
+      value: Wie soll ich Dich ansprechen?
+      objectReference: {fileID: 0}
     - target: {fileID: 296326591673032075, guid: 0561908e74e889d4e81ea17deb682257, type: 3}
       propertyPath: m_Name
       value: TitleSelection
