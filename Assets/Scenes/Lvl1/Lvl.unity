@@ -779,10 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - Dietmar rennt dem Geld hinterher, wir locken ihn mit einer Spur aus Muenzen in
-    den Park. Nimm den Schluessel Drei.
-  - Wir legen einen Koeder aus Muenzen im Park, denn Dietmar ist der geizigste Typ
-    auf Erden. Drei ist der naechste Schluessel.
+  - Im Park. Naechster Schluessel drei.
   encryptedTextBox: {fileID: 2098510323}
 --- !u!4 &908480196
 Transform:
