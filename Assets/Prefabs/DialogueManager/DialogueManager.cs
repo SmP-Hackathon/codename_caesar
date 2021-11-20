@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
         conversationText.text = String.Format(currentSentence, userName, userTitle, smallUserTitle);
 
         // Hide prev button on start
-        _currentPrevButton.gameObject.SetActive(index != 0);
+        _currentPrevButton?.gameObject.SetActive(index != 0);
     }
 
     public void DisplayPrevSentence() {
