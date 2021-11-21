@@ -49,7 +49,7 @@ public class VigenereEncryptor : MonoBehaviour
         ClearMessage = messages[new System.Random().Next(0,messages.Length-1)].ToLower();
         EncryptedMessage = VigenereEncrypt().ToUpper();
 
-        EncryptedTextBox.text = EncryptedMessage;
+        if(EncryptedTextBox != null)EncryptedTextBox.text = EncryptedMessage;
 
     }
 
@@ -61,6 +61,8 @@ public class VigenereEncryptor : MonoBehaviour
         foreach (var letter in ClearMessage)
         {
             if(letter == ' ') {_encryptedMessage += ' ';}
+            else if(letter == '!'){_encryptedMessage += '!';}
+            else if(letter == '.'){_encryptedMessage += '.';}
             else
             {
                 _encryptedMessage += alphabet[(GetLetterIndexInAlphabet(letter) + encryptionKeys[currentIndex % encryptionKeys.Length]) % 26];

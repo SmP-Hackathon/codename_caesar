@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4524092695426580923, guid: 72e8ccd810b7a8a45b5c647cc33051c2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4524092695426580923, guid: 72e8ccd810b7a8a45b5c647cc33051c2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -378,7 +378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1235703989 stripped
 MonoBehaviour:
@@ -420,7 +420,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a0d30e0bb68c234a8c3af65fd075c2c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -516,7 +516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645924408
 GameObject:
@@ -574,7 +574,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713130238 stripped
 GameObject:
@@ -763,7 +763,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2063012569896281990
 PrefabInstance:
@@ -851,7 +851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5750554386339984108, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5750554386339984108, guid: 0b281a1d3c3581646b47cc24a3b34688, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1048,14 +1048,3 @@ PrefabInstance:
       objectReference: {fileID: 1713130241}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72e8ccd810b7a8a45b5c647cc33051c2, type: 3}
---- !u!114 &4524092696133583663 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5425817878637155452, guid: 72e8ccd810b7a8a45b5c647cc33051c2, type: 3}
-  m_PrefabInstance: {fileID: 4524092696133583662}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713130238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bae551e10a35ab4bb067f4d9480712e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -31,8 +31,8 @@ public class TextEncryptor : MonoBehaviour
             if (currentLetter == ' ') encryptedMessage += ' ';
             else if (currentLetter == ',') encryptedMessage += ',';
             else if (currentLetter == '.') encryptedMessage += '.';
-            else if (currentLetter == '.') encryptedMessage += '!';
-            else if (currentLetter == '.') encryptedMessage += '?';
+            else if (currentLetter == '!') encryptedMessage += '!';
+            else if (currentLetter == '?') encryptedMessage += '?';
             else
             {
                 int currentLetterIndex = -1;

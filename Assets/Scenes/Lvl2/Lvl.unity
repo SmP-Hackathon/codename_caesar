@@ -320,9 +320,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - Das ist der Klartext
+  - In Moskau lassen wir die Bombe platzen und das Internet ist weg drei acht sieben
   EncryptedTextBox: {fileID: 675075660}
-  EncryptionWord: cat
+  EncryptionWord: cue
 --- !u!4 &238557697
 Transform:
   m_ObjectHideFlags: 0
@@ -525,6 +525,7 @@ MonoBehaviour:
     sentences:
     - "Deine entschl\xFCsselte Nachricht ergibt noch nicht so viel Sinn. Versuche
       es weiter!"
+    voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -786,9 +787,22 @@ MonoBehaviour:
     name: "Herzlichen Gl\xFCckwunsch!"
     sentences:
     - "Du hast das Level erfolgreich gel\xF6st!"
+    voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1260499567}
+          m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   DialogueManager: {fileID: 1719582338}
   prevButton: {fileID: 0}
 --- !u!4 &911947412
@@ -1060,6 +1074,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc8a0923cb3892145ae0959dbddbadce, type: 3}
+--- !u!1001 &1260499566
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4335389295621148716, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_Name
+      value: NextSceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: sceneName
+      value: Scenes/Lvl2/Lvl-Part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 588.2863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 268.7666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -552.3041
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768293174308858692, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+--- !u!114 &1260499567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6415604947399881544, guid: f8680caee04b7d244bbc2362ca4fbc41, type: 3}
+  m_PrefabInstance: {fileID: 1260499566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ed8c78a2433924a85ec9371fe08034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1291325968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,7 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: "Vigin\xE8re-Verschl\xFCssellung"
+    name: "Vigen\xE8re-Verschl\xFCssellung"
     sentences:
     - "Das sieht weniger einheitlich aus als beim letzten Mal, wahrscheinlich eine
       Vigen\xE8re-Chiffre. Jeder Buchstabe wurde wieder durch einen anderen aus einem
@@ -1889,6 +1975,7 @@ MonoBehaviour:
       Buchstaben hat. Du musst nur noch herausfinden, welche."
     - "Mit den Scheiben kannst du das Schl\xFCsselwort zum Entschl\xFCsseln einstellen.
       Der entschl\xFCsselte Text wird unten angezeigt. Viel Erfolg!"
+    voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls: []
