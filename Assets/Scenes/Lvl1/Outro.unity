@@ -155,15 +155,11 @@ MonoBehaviour:
   dialogue:
     name: Fall 1
     sentences:
-    - "{1} {0}, dein erster Fall ist im Anflug! Am Wochenende soll in Dublin die
-      Premiergala zur letzte Folge von \u201EGame of Tones\u201C stattfinden."
-    - "Wie, du kennst die Serie nicht? Ich habe schon alle Folgen f\xFCnf Mal durchgeschaut."
-    - Auf jeden Fall haben unsere Informanten herausgefunden, dass die BO den Hauptdarsteller
-      und Stargast Dietmar Bohler einkassieren wollen! Ohne ihn wird die Premierengala
-      ins Wasser fallen.
-    - "Unsere IT-Leute konnten sich aber in den privaten Chat der BO einklinken.
-      Da m\xFCssen Hinweise dazu drinstecken, wie sie Dietmar Bohler entf\xFChren
-      wollen!"
+    - "Na klar! Dietmar hat einen Auftritt vor dem Hyde Park! Dort k\xF6nnen wir
+      den Agenten der BO abfangen. Der GUT kann ihnen nun eine Falle stellen, indem
+      wir den Schl\xFCssel aus der letzten Nachricht benutzen!"
+    - "Perfekt, {1} {0}! Du hast deinen ersten Fall erfolgreich gel\xF6st."
+    voices: []
     AfterDialogFinishedEvent:
       m_PersistentCalls:
         m_Calls:
@@ -841,3 +837,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ed8c78a2433924a85ec9371fe08034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &4209834954124394284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739864, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739870, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_Name
+      value: BgMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209834954303739871, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: da38952b7d64b6c4d86f517975f8e774, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00fb8dd32fc394755a10bc869776cc70, type: 3}
